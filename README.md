@@ -16,6 +16,15 @@ In our paper, we introduce:
 <img src="images/plasticity.png" width="85%" height="85%" />
 </p>
 
+## Software & Hardware Requirements
+
+The implementation is based on Pytorch and the required environmental dependencies are relatively simple. Version control tool is not necessary.
+
+All the code is easy to run directly on CPU and common Nvidia GPUs. The experiments on simple datasets can be done on CPU in proper time but the ones on more complex data is recommended to use GPU.
+
+## Details
+
+
 Dataset.py --> Preprocess the datasets used to train and test our model, including Iris, Spike, MNIST, and Fashion-MNIST. The raw datasets are provided here; please refer to the datasets folder. The Spike dataset, which includes the files "gamma_5-inhomogbgnoise-trials-250-syn-500-feat-9-train" and "gamma_5-inhomogbgnoise-trials-250-syn-500-feat-9-validation", is used for validating the temporal credit assignment (TCA) problem.
 
 SL_Layer.py & SL_MultiInputLy.py --> Our model, spiking neural network (SNN) equipped with shifting learning. There are two variants: (1) SL_Layer.py for input neurons receive a single spike from each synapse in a trial, and (2) SL_MultiInputLy.py for input neurons can receive multiple spikes from each synapse used in the TCA task.
@@ -26,6 +35,7 @@ SL_small.py --> Our model used to solve the Iris classification task. It is desi
 
 
 SL_mnist.py --> Our model applied to the MNIST and Fashion-MNIST datasets, and it can be accelerated using GPUs.
+
 
 
 
