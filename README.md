@@ -1,4 +1,4 @@
-<font color=red> Shifting Learning </font>
+# Shifting Learning
 
 Dataset.py --> Preprocess the datasets used to train and test our model, including Iris, Spike, MNIST, and Fashion-MNIST. The raw datasets are provided here; please refer to the datasets folder. The Spike dataset, which includes the files "gamma_5-inhomogbgnoise-trials-250-syn-500-feat-9-train" and "gamma_5-inhomogbgnoise-trials-250-syn-500-feat-9-validation", is used for validating the temporal credit assignment (TCA) problem.
 
@@ -10,3 +10,4 @@ SL_small.py --> Our model used to solve the Iris classification task. It is desi
 
 
 SL_mnist.py --> Our model applied to the MNIST and Fashion-MNIST datasets, and it can be accelerated using GPUs.
+
